@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sun Aug  6 16:54:40 2017
-
-@author: wolfiedieterich
+this program solves a maze that requires following a certain sequence
+https://www.reddit.com/r/dailyprogrammer/comments/6qutez/20170801_challenge_325_easy_color_maze/
 """
 import numpy as np
 from PIL import Image
@@ -81,7 +80,6 @@ def run(f, seq, directions):
         path =[]
         hist = []
         hist.append([i.item(0),f.shape[1]-1,1])
-        # p not used???
         p, end = next_step(i.item(0), f.shape[1]-1, path, seq, f, count, directions, hist)
         if end:
             path.append((i.item(0),f.shape[1]-1))

@@ -1,5 +1,11 @@
-# word_list = "zero one two three four five six seven".split()
-with open('real_words (1).txt') as fo:
+"""
+problem description: https://www.reddit.com/r/dailyprogrammer/comments/6t0zua/20170811_challenge_326_hard_multifaceted_alphabet/
+
+Idea is to try to maximize the number of words that can use any one block, temporarily discarding words once they have
+been used for a block face.
+
+"""
+with open('real_words.txt') as fo:
     text = fo.read()
     word_list = text.splitlines()
 
