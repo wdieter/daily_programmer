@@ -4,7 +4,7 @@ problem description: https://www.reddit.com/r/dailyprogrammer/comments/6t0zua/20
 Idea is to try to maximize the number of words that can use any one block, temporarily discarding words once they have
 been used for a block face.
 For example: the ideal solution for a list of words with length of 12 letters would be a block set of length 12 where each block 
-is used by 100% of the words
+is used by 100% of the words. This algorithm attemps to cover each word with each block to attempt 100% word coverage per block. 
 """
 
 with open('real_words.txt') as fo:
